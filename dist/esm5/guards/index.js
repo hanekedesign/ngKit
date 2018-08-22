@@ -1,0 +1,8 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+export { AuthGuard } from './auth-guard';
+export { AuthResolveGuard } from './auth-resolve-guard';
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ2tpdC8iLCJzb3VyY2VzIjpbImd1YXJkcy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLGNBQWMsQ0FBQztBQUN6QyxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IEF1dGhHdWFyZCB9IGZyb20gJy4vYXV0aC1ndWFyZCc7XG5leHBvcnQgeyBBdXRoUmVzb2x2ZUd1YXJkIH0gZnJvbSAnLi9hdXRoLXJlc29sdmUtZ3VhcmQnO1xuIl19

@@ -1,0 +1,38 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+import { Config } from './config';
+import { Authentication, Authorization, Event, Http, SocialAuthentication, Storage, Token, Cache } from './services/index';
+import { AuthGuard, AuthResolveGuard } from './guards/index';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpInterceptor } from './services/http-interceptor';
+import { AuthInterceptor } from './services/http-auth-interceptor';
+/**
+ * ngKit Services.
+ */
+export const /** @type {?} */ NGKIT_PROVIDERS = [
+    Authentication,
+    AuthGuard,
+    AuthResolveGuard,
+    SocialAuthentication,
+    Authorization,
+    Config,
+    Storage,
+    Cache,
+    Event,
+    Http,
+    Token,
+    {
+        provide: HTTP_INTERCEPTORS,
+        useClass: HttpInterceptor,
+        multi: true
+    },
+    {
+        provide: HTTP_INTERCEPTORS,
+        useClass: AuthInterceptor,
+        multi: true
+    }
+];
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJvdmlkZXJzLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmdraXQvIiwic291cmNlcyI6WyJwcm92aWRlcnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7OztBQUFBLE9BQU8sRUFBRSxNQUFNLEVBQUUsTUFBTSxVQUFVLENBQUM7QUFDbEMsT0FBTyxFQUNILGNBQWMsRUFBRSxhQUFhLEVBQUUsS0FBSyxFQUFFLElBQUksRUFBRSxvQkFBb0IsRUFDaEUsT0FBTyxFQUFFLEtBQUssRUFBRSxLQUFLLEVBQ3hCLE1BQU0sa0JBQWtCLENBQUM7QUFDMUIsT0FBTyxFQUFFLFNBQVMsRUFBRSxnQkFBZ0IsRUFBRSxNQUFNLGdCQUFnQixDQUFDO0FBQzdELE9BQU8sRUFBRSxpQkFBaUIsRUFBRSxNQUFNLHNCQUFzQixDQUFDO0FBQ3pELE9BQU8sRUFBRSxlQUFlLEVBQUUsTUFBTSw2QkFBNkIsQ0FBQztBQUM5RCxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0sa0NBQWtDLENBQUM7Ozs7QUFLbkUsTUFBTSxDQUFDLHVCQUFNLGVBQWUsR0FBVTtJQUNsQyxjQUFjO0lBQ2QsU0FBUztJQUNULGdCQUFnQjtJQUNoQixvQkFBb0I7SUFDcEIsYUFBYTtJQUNiLE1BQU07SUFDTixPQUFPO0lBQ1AsS0FBSztJQUNMLEtBQUs7SUFDTCxJQUFJO0lBQ0osS0FBSztJQUNMO1FBQ0ksT0FBTyxFQUFFLGlCQUFpQjtRQUMxQixRQUFRLEVBQUUsZUFBZTtRQUN6QixLQUFLLEVBQUUsSUFBSTtLQUNkO0lBQ0Q7UUFDSSxPQUFPLEVBQUUsaUJBQWlCO1FBQzFCLFFBQVEsRUFBRSxlQUFlO1FBQ3pCLEtBQUssRUFBRSxJQUFJO0tBQ2Q7Q0FDSixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29uZmlnIH0gZnJvbSAnLi9jb25maWcnO1xuaW1wb3J0IHtcbiAgICBBdXRoZW50aWNhdGlvbiwgQXV0aG9yaXphdGlvbiwgRXZlbnQsIEh0dHAsIFNvY2lhbEF1dGhlbnRpY2F0aW9uLFxuICAgIFN0b3JhZ2UsIFRva2VuLCBDYWNoZVxufSBmcm9tICcuL3NlcnZpY2VzL2luZGV4JztcbmltcG9ydCB7IEF1dGhHdWFyZCwgQXV0aFJlc29sdmVHdWFyZCB9IGZyb20gJy4vZ3VhcmRzL2luZGV4JztcbmltcG9ydCB7IEhUVFBfSU5URVJDRVBUT1JTIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uL2h0dHAnO1xuaW1wb3J0IHsgSHR0cEludGVyY2VwdG9yIH0gZnJvbSAnLi9zZXJ2aWNlcy9odHRwLWludGVyY2VwdG9yJztcbmltcG9ydCB7IEF1dGhJbnRlcmNlcHRvciB9IGZyb20gJy4vc2VydmljZXMvaHR0cC1hdXRoLWludGVyY2VwdG9yJztcblxuLyoqXG4gKiBuZ0tpdCBTZXJ2aWNlcy5cbiAqL1xuZXhwb3J0IGNvbnN0IE5HS0lUX1BST1ZJREVSUzogYW55W10gPSBbXG4gICAgQXV0aGVudGljYXRpb24sXG4gICAgQXV0aEd1YXJkLFxuICAgIEF1dGhSZXNvbHZlR3VhcmQsXG4gICAgU29jaWFsQXV0aGVudGljYXRpb24sXG4gICAgQXV0aG9yaXphdGlvbixcbiAgICBDb25maWcsXG4gICAgU3RvcmFnZSxcbiAgICBDYWNoZSxcbiAgICBFdmVudCxcbiAgICBIdHRwLFxuICAgIFRva2VuLFxuICAgIHtcbiAgICAgICAgcHJvdmlkZTogSFRUUF9JTlRFUkNFUFRPUlMsXG4gICAgICAgIHVzZUNsYXNzOiBIdHRwSW50ZXJjZXB0b3IsXG4gICAgICAgIG11bHRpOiB0cnVlXG4gICAgfSxcbiAgICB7XG4gICAgICAgIHByb3ZpZGU6IEhUVFBfSU5URVJDRVBUT1JTLFxuICAgICAgICB1c2VDbGFzczogQXV0aEludGVyY2VwdG9yLFxuICAgICAgICBtdWx0aTogdHJ1ZVxuICAgIH1cbl07XG4iXX0=
