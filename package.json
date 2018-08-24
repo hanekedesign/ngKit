@@ -1,6 +1,6 @@
 {
     "name": "ng-auth-kit",
-    "version": "0.10.2",
+    "version": "0.10.3",
     "description": "",
     "typings": "dist/index.d.ts",
     "$schema": "./node_modules/ng-packagr/package.schema.json",
