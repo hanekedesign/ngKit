@@ -3,3 +3,6 @@
 npm-debug.log
 
 # Ignore compiled files
+/dist
+dist.tgz
+**/*.ngfactory.ts
