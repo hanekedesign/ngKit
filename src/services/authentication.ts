@@ -295,6 +295,7 @@ export class Authentication implements OnDestroy {
                     this.event.broadcast('auth:registered', res);
                 }, error => reject(error));
                } else {
+                   resolve(res)
                    this.event.broadcast('auth:registered', res);
                }
             }, error => reject(error));;
